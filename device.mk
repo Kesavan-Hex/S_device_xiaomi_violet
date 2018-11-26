@@ -70,6 +70,10 @@ TARGET_SCREEN_WIDTH := 1080
 
 # Telephony
 PRODUCT_PACKAGES += \
+    qti-telephony-hidl-wrapper \
+    qti_telephony_hidl_wrapper.xml
+
+PRODUCT_PACKAGES += \
     telephony-ext
 
 PRODUCT_BOOT_JARS += \
