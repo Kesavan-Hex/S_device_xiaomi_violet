@@ -102,3 +102,10 @@ PRODUCT_BOOT_JARS += \
 PRODUCT_PACKAGES += \
     vndk_package
 
+# WiFi Display
+PRODUCT_PACKAGES += \
+    libnl
+
+PRODUCT_BOOT_JARS += \
+    WfdCommon
+
