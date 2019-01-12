@@ -58,6 +58,9 @@ BOARD_RAMDISK_OFFSET := 0x01000000
 # Platform
 TARGET_BOARD_PLATFORM := sm6150
 
+# Telephony
+TARGET_PROVIDES_QTI_TELEPHONY_JAR := true
+
 # Inherit from the proprietary version
 include vendor/xiaomi/violet/BoardConfigVendor.mk
 
