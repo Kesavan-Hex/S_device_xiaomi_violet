@@ -23,6 +23,10 @@ $(call inherit-product, frameworks/native/build/phone-xhdpi-6144-dalvik-heap.mk)
 # Call the proprietary setup
 $(call inherit-product, vendor/xiaomi/violet/violet-vendor.mk)
 
+# Permissions
+PRODUCT_COPY_FILES += \
+    frameworks/native/data/etc/android.hardware.fingerprint.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/android.hardware.fingerprint.xml
+
 # ANT+
 PRODUCT_PACKAGES += \
     AntHalService
