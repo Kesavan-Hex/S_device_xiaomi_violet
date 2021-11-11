@@ -58,5 +58,8 @@ BOARD_RAMDISK_OFFSET := 0x01000000
 # Platform
 TARGET_BOARD_PLATFORM := sm6150
 
+# Inherit from the proprietary version
+include vendor/xiaomi/violet/BoardConfigVendor.mk
+
 TARGET_KERNEL_CONFIG := vendor/violet-perf_defconfig
 TARGET_KERNEL_SOURCE := kernel/xiaomi/violet
