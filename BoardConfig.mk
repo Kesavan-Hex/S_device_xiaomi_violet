@@ -55,5 +55,8 @@ BOARD_KERNEL_IMAGE_NAME := Image.gz-dtb
 
 BOARD_RAMDISK_OFFSET := 0x01000000
 
+# Platform
+TARGET_BOARD_PLATFORM := sm6150
+
 TARGET_KERNEL_CONFIG := vendor/violet-perf_defconfig
 TARGET_KERNEL_SOURCE := kernel/xiaomi/violet
