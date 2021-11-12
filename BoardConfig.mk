@@ -113,6 +113,10 @@ TARGET_BOARD_PLATFORM := sm6150
 # Sepolicy 
 BOARD_PLAT_PRIVATE_SEPOLICY_DIR += $(DEVICE_PATH)/sepolicy/private
 
+# Sepolicy - Qcom 
+TARGET_SEPOLICY_DIR := msmsteppe
+include device/qcom/sepolicy_vndr/SEPolicy.mk
+
 # Telephony
 TARGET_PROVIDES_QTI_TELEPHONY_JAR := true
 
@@ -122,5 +126,3 @@ BOARD_VNDK_VERSION := current
 # Inherit from the proprietary version
 include vendor/xiaomi/violet/BoardConfigVendor.mk
 
-TARGET_KERNEL_CONFIG := vendor/violet-perf_defconfig
-TARGET_KERNEL_SOURCE := kernel/xiaomi/violet
