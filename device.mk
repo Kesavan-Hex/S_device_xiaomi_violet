@@ -44,6 +44,13 @@ PRODUCT_SOONG_NAMESPACES += \
 TARGET_SCREEN_HEIGHT := 2340
 TARGET_SCREEN_WIDTH := 1080
 
+# Telephony
+PRODUCT_PACKAGES += \
+    telephony-ext
+
+PRODUCT_BOOT_JARS += \
+    telephony-ext
+
 # VNDK
 PRODUCT_PACKAGES += \
     vndk_package
