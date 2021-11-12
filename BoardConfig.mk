@@ -81,6 +81,9 @@ TARGET_USERIMAGES_USE_F2FS := true
 # Partitions - Vendor
 TARGET_COPY_OUT_VENDOR := vendor
 
+# Partitions - fstab
+TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/etc/fstab.qcom
+
 # Platform
 TARGET_BOARD_PLATFORM := sm6150
 
