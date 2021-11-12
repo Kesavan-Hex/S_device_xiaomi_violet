@@ -110,6 +110,9 @@ TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/etc/fstab.qcom
 # Platform
 TARGET_BOARD_PLATFORM := sm6150
 
+# Sepolicy 
+BOARD_PLAT_PRIVATE_SEPOLICY_DIR += $(DEVICE_PATH)/sepolicy/private
+
 # Telephony
 TARGET_PROVIDES_QTI_TELEPHONY_JAR := true
 
