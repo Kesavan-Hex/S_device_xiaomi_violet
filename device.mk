@@ -27,6 +27,10 @@ $(call inherit-product, vendor/xiaomi/violet/violet-vendor.mk)
 TARGET_SCREEN_HEIGHT := 2340
 TARGET_SCREEN_WIDTH := 1080
 
+# CNE
+PRODUCT_PACKAGES += \
+    libcnefeatureconfig
+
 # HIDL
 PRODUCT_PACKAGES += \
     android.hidl.manager@1.0 \
@@ -45,6 +49,16 @@ DEVICE_PACKAGE_OVERLAYS += \
 # QCOM Priv permissions
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/permissions/privapp-permissions-qti.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/privapp-permissions-qti.xml
+
+# RIL
+PRODUCT_PACKAGES += \
+    librmnetctl \
+    libxml2
+
+PRODUCT_PACKAGES += \
+    android.hardware.radio@1.4 \
+    android.hardware.radio.config@1.2 \
+    android.hardware.secure_element@1.0
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
