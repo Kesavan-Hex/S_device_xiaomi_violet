@@ -31,6 +31,10 @@ def AddImage(info, basename, dest):
   if path not in info.input_zip.namelist():
     return
 
+  path = "IMAGES/" + name
+  if path not in info.input_zip.namelist():
+    return
+
   data = info.input_zip.read(path)
   common.ZipWriteStr(info.output_zip, basename, data)
   info.script.Print("Patching {} image unconditionally...".format(dest.split('/')[-1]))
