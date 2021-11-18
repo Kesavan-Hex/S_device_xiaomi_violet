@@ -27,6 +27,10 @@ $(call inherit-product, vendor/xiaomi/violet/violet-vendor.mk)
 PRODUCT_PACKAGES += \
     android.hardware.atrace@1.0-service
     
+# AID/fs configs
+PRODUCT_PACKAGES += \
+    fs_config_files
+    
  # Audio
 PRODUCT_PACKAGES += \
     android.hardware.audio@6.0-impl \
