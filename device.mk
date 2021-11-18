@@ -63,6 +63,21 @@ PRODUCT_PACKAGES += \
     libspkrprot \
     libvisualizer \
     libvolumelistener
+    
+# Camera
+PRODUCT_PACKAGES += \
+    android.hardware.camera.provider@2.4-impl \
+    android.hardware.camera.provider@2.4-service_64
+
+PRODUCT_PACKAGES += \
+    libcamera2ndk_vendor \
+    libdng_sdk.vendor \
+    libgui_vendor \
+    libstdc++.vendor \
+    vendor.qti.hardware.camera.postproc@1.0.vendor
+
+PRODUCT_PACKAGES += \
+    Snap
 
 # Display
 PRODUCT_PACKAGES += \
