@@ -305,6 +305,11 @@ PRODUCT_BOOT_JARS += \
 PRODUCT_TARGET_VNDK_VERSION := 29
 PRODUCT_PACKAGES += \
     vndk_package
+    
+# Vibrator
+PRODUCT_PACKAGES += \
+    android.hardware.vibrator@1.0-impl \
+    android.hardware.vibrator@1.0-service
 
 # Wifi
 PRODUCT_COPY_FILES += \
