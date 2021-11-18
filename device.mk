@@ -218,6 +218,19 @@ PRODUCT_PACKAGES += \
 # Overlay
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay
+    
+# OMX
+PRODUCT_PACKAGES += \
+    init.qti.media.sh \
+    libOmxAacEnc \
+    libOmxAmrEnc \
+    libOmxCore \
+    libOmxEvrcEnc \
+    libOmxG711Enc \
+    libOmxQcelp13Enc \
+    libOmxVdec \
+    libOmxVenc \
+    libstagefrighthw
 
 # Properties
 PRODUCT_COMPATIBLE_PROPERTY_OVERRIDE := true
