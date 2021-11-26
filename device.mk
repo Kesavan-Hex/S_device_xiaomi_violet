@@ -327,9 +327,9 @@ PRODUCT_PACKAGES += \
     init.qcom.usb.sh \
     init.qti.ims.sh
     
-
 # RIL
 PRODUCT_PACKAGES += \
+    libprotobuf-cpp-full \
     librmnetctl \
     libxml2
 
