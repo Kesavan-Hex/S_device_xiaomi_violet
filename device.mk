@@ -221,6 +221,12 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/gps/lowi.conf:$(TARGET_COPY_OUT_VENDOR)/etc/lowi.conf \
     $(LOCAL_PATH)/configs/gps/sap.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sap.conf 
 
+# HALs
+PRODUCT_SOONG_NAMESPACES += \
+    hardware/qcom-caf/sm8150/display \
+    hardware/qcom-caf/sm8150/media \
+    hardware/qcom-caf/sm8150/audio
+
 # HIDL
 PRODUCT_PACKAGES += \
     android.hidl.base@1.0 \
